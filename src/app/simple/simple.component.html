@@ -1,0 +1,10 @@
+<ng-container [formGroup]="formGroup">
+  <div>
+    <dynamic-form
+      [fields]="actions[0].fields"
+      [formGroup]="formGroup.get('configuredProperties')"
+    ></dynamic-form>
+    <button (click)="enableForm()">Enable</button>
+    <button (click)="disableForm()">Disable</button>
+  </div>
+</ng-container>
